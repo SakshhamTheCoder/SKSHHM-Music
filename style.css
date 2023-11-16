@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap');
+
+body {
+    margin: 0;
+    user-select: none;
+}
+
+body>* {
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /*background: linear-gradient(180deg, #233d8a 1%, #0a1828 50%, #020202 100%);*/
+    background: linear-gradient(180deg, #1f103b 1%, #110a28 50%, #020202 100%);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 5vmax;
+}
+
+.title img {
+    height: 15vmax;
+    border-radius: 100%;
+}
+
+.releases {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: #020202;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vmax;
+}
+
+.tracks {
+    min-width: 80vw;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.details {
+    align-items: center;
+    text-align: center;
+}
+
+.track-title {
+    padding: 20px 0px;
+}
+
+#album-art-image {
+    height: 25vmax;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 100px 0 rgba(160, 160, 160, 0.5);
+}
+
+.list-group-item {
+    background-color: #16191c !important;
+    color: rgb(221, 221, 221) !important;
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    background-color: rgb(108, 68, 184) !important;
+    border: none !important;
+    /*background-color: #0d6efd !important;*/
+    color: white !important;
+}
+
+.about {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: #020202;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vmax;
+}
+
+.about-content {
+    width: 80vw;
+    text-align: -webkit-center;
+}
+
+.about-text {
+    text-align: center;
+    width: 60vw;
+    font-size: 1.1em;
+
+}
+
+.daw-image-container {
+    text-align: center;
+}
+
+#daw-image {
+    height: 25vmax;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 100px 0 rgba(160, 160, 160, 0.5);
+    margin: 20px;
+}
+
+.socials {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background: linear-gradient(0deg, #1f103b 1%, #110a28 50%, #020202 100%);
+    color: #f0f0f0;
+    /* min-height: 40vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vmax;
+}
+
+.soc-btn {
+    border-radius: 20px !important;
+    min-width: 10vmax !important;
+    font-size: 20px !important;
+}
+
+.socials-content {
+    text-align: -webkit-center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    * {
+        font-size: 1.5vmax;
+    }
+
+    .tracks {
+        flex-direction: column;
+        min-width: 90vw;
+    }
+
+    #daw-image {
+        height: 40vw;
+    }
+
+}
