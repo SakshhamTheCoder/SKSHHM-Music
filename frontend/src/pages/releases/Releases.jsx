@@ -11,7 +11,7 @@ const Releases = () => {
     useEffect(() => {
         const fetchReleases = async () => {
             try {
-                const response = await fetch('http://192.168.29.29:3001/api/artist-releases');
+                const response = await fetch('https://skshhm-music-backend.vercel.app/api/artist-releases');
                 const data = await response.json();
                 const mainAlbums = data.filter(item => item.album_group !== 'appears_on').map(item => item.id);
                 const features = data.filter(item => item.album_group === 'appears_on').map(item => item.id);

@@ -13,7 +13,6 @@ const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 
 const ARTIST_ID = '7nCJcYHdNQNrZA7Px7TbZG';
-// const ARTIST_ID = '4mHAu7NX2UNsnGXjviBD9e';
 
 async function getSpotifyToken() {
     const res = await axios.post('https://accounts.spotify.com/api/token',

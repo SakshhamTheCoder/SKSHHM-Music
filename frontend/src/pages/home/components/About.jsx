@@ -12,7 +12,7 @@ const About = () => {
     const [latestRelease, setLatestRelease] = useState(null);
     useEffect(() => {
         const fetchLatestRelease = async () => {
-            fetch('http://192.168.29.29:3001/api/artist-releases')
+            fetch('https://skshhm-music-backend.vercel.app/api/artist-releases')
                 .then(response => response.json())
                 .then(data => {
                     if (data.length > 0) {
